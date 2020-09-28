@@ -13,20 +13,24 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center'
   },
   title: {
-    responsiveFontSizes: '50px'
+    responsiveFontSizes: '50px',
+    color: 'white'
+
   },
   subtitle: {
-    marginBottom: '4rem'
+    marginBottom: '4rem',
+    color: 'white'
   }
 }))
-
 
 const Home = () => {
   const classes = useStyles()
   return (
     <Box className={classes.container}>
       <Typography className={classes.title} variant="h1">
-        <Typed strings={['Bec Sun']} typeSpeed={70}/>
+        <Typed strings={['Bec Sun']}
+          typeSpeed={100}
+        />
       </Typography>
       <br />
       <Typography className={classes.subtitle} variant="h3">
