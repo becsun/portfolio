@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Typography, Grid, Box, makeStyles, responsiveFontSizes } from '@material-ui/core'
+import { Typography, Grid, Box, makeStyles, responsiveFontSizes, createMuiTheme } from '@material-ui/core'
 import Typed from 'react-typed'
 
 //CSS Styles
@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center'
   },
   title: {
-    responsiveFontSizes: '50px',
+    h1: '50px',
     color: 'white'
 
   },

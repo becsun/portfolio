@@ -1,38 +1,70 @@
 import React from 'react'
-import { Typography , Link , makeStyles} from '@material-ui/core'
+import { Box , Link , makeStyles , Typography ,ThemeProvider, createMuiTheme } from '@material-ui/core'
 
 
 
 //CSS Styles
-const useStyles = makeStyles(theme => ({
-  link: {
-    color: 'white'
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: 'BlinkMacSystemFont',
+    fontSize: 20,
+    fontWeightMedium: 800
+
+  },
+  palette: {
+    primary: {
+      main: '#fbffff'
+    }
   }
-}))
+})
+
+
+
+
+
 
 
 const Navbar = () => {
-  const classes = useStyles()
+  // const classes = useStyles()
   return (
     <>
-      <div>
 
-        <Link color="inherit" href="/" className={classes.link}>
-            ABOUT
-        </Link>
-        <Link color="inherit" href="/" className={classes.link}>
-          PROJECTS
-        </Link>
-        <Link color="inherit" href="/" className={classes.link}>
-          {/* onClick={handleClick} */}
-            TECHNOLOGIES
-        </Link>
-        <Link color="inherit" href="/" className={classes.link}>
-          {/* onClick={handleClick} */}
-            CONTACT
-        </Link>
+      <Box display="flex" m={7} marginLeft={15} marginBottom={0} >
 
-      </div>
+
+        <Box flexGrow={.3} >
+          <Link href="/"  >
+            <ThemeProvider theme={theme}>
+              <Typography >
+              ABOUT
+              </Typography>
+            </ThemeProvider>
+          </Link>
+        </Box>
+
+        <Box flexGrow={1}>
+          <Link href="/" >
+            PROJECTS
+          </Link>
+        </Box>
+        <Box flexGrow={.3}>
+          <Link href="/" >
+            {/* onClick={handleClick} */}
+              TECHNOLOGIES
+          </Link>
+        </Box>
+        <Box flexGrow={.2}>
+          <Link href="/" >
+            {/* onClick={handleClick} */}
+              CONTACT
+          </Link>
+        </Box>
+
+      </Box>
+
+
+
     </>
   )
 }

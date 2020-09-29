@@ -11,12 +11,16 @@ const App = () => {
   return (
 
     <div>
+      <Particle/>
       <NavBar />
-      <Particle />
       <Home />
       <AboutMe />
       <Projects />
       <Footer />
+
+
+
+
     </div>
 
   )
