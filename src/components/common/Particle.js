@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles({
   particlesCanva: {
-    position: 'absolute'
+    position: 'fixed'
   }
 })
 
@@ -15,7 +15,7 @@ const Particle = () =>{
   return (
     <div
       style ={{
-        position: 'absolute',
+        display: 'flex',
         top: 0,
         width: '100%',
         height: '100%'
@@ -47,7 +47,6 @@ const Particle = () =>{
         }}
       />
     </div>
-
 
   )
 }
