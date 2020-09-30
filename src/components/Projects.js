@@ -19,8 +19,9 @@ const useStyles = makeStyles({
   },
   image: {
     display: 'block',
-    width: '50%',
-    height: '100%'
+    width: '30%',
+    height: '100%',
+    paddingBottom: '5%'
   }
 })
 
@@ -28,12 +29,23 @@ const Projects = () => {
   const classes = useStyles()
   return (
     <ScrollableAnchor id={'Projects'}>
-      <Box display='flex' position='relative' marginTop={10} width='100%'>
+      <Box display='flex' flexDirection='column' marginTop={10} width='100%' position="relative">
         <Box >
-          <img src={Homepage} className={classes.image} alt='project1'/>
+          <img src={Homepage} className={classes.image} alt='project4'/>
+        </Box>
+        <Box >
+          <img src={Nalu} className={classes.image} alt='project3'/>
+        </Box>
+
+        <Box >
+          <img src={Alcohol} className={classes.image} alt='project2'/>
+        </Box>
+        <Box >
+          <img src={Goo} className={classes.image} alt='project1'/>
         </Box>
       </Box>
     </ScrollableAnchor>
+
   )
 }
 

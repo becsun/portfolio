@@ -46,7 +46,6 @@ const Home = () => {
       </Box>
     </ScrollableAnchor>
 
-
   )
 }
 

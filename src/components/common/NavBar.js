@@ -1,32 +1,40 @@
 import React from 'react'
-import {  createMuiTheme } from '@material-ui/core'
+import {  Box, makeStyles } from '@material-ui/core'
 
 
 //CSS Styles
 
-const theme = createMuiTheme({
-  typography: {
-    fontFamily: 'BlinkMacSystemFont',
-    fontSize: 20,
-    fontWeightMedium: 800
-
+const useStyles = makeStyles({
+  leftLink: {
+    color: 'white'
   },
-  palette: {
-    primary: {
-      main: '#fbffff'
-    }
+  rightLink: {
+    color: 'white'
   }
 })
 
 
 const Navbar = () => {
+  const classes = useStyles()
   return (
 
     <div>
-      <a  href='#About'> About </a>
-      <a href='#Projects'> Projects </a>
-      <a href='#Technologies'> Technologies </a>
-      <a href='#Contact'> Contact </a>
+      <Box>
+        <a className={classes.leftLink} href='#About'> About </a>
+      </Box>
+      <Box>
+        <a className={classes.leftLink} href='#Projects'> Projects </a>
+      </Box>
+      <Box>
+        <a className={classes.rightLink} href='#Technologies'> Technologies </a>
+      </Box>
+      <Box>
+        <a className={classes.rightLink} href='#Contact'> Contact </a>
+      </Box>
+
+
+
+
     </div>
 
   )

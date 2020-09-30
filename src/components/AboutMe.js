@@ -47,13 +47,9 @@ const AboutMe = () =>  {
           </Typography>
         </ScrollableAnchor>
 
-
         <IconButton href='#Home'size="large" aria-label="up">
-          <ArrowUpwardIcon  />
+          <ArrowUpwardIcon />
         </IconButton>
-     
-
-
       </Box>
 
     </>
