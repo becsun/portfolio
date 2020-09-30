@@ -8,10 +8,8 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 const useStyles = makeStyles(theme => ({
   container: {
-    position: 'absolute',
-    top: '150%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
+    display: 'fixed',
+    marginTop: '60%',
     width: '100%',
     textAlign: 'center'
   },
@@ -36,6 +34,7 @@ const AboutMe = () =>  {
             typeSpeed={100}
           />
         </Typography>
+        <br/>
         <ScrollableAnchor id={'About'}>
           <Typography className={classes.text}>
           After a great experience of 16 years as a hairdresser, I’m ready to take a leap into an exciting career as a Software Engineer.

@@ -13,13 +13,14 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center'
   },
   title: {
-    h1: '50px',
+    h1: '70px',
     color: 'white'
 
   },
   subtitle: {
     marginBottom: '4rem',
-    color: 'white'
+    color: 'white',
+    fontSize: '50px'
   }
 }))
 
