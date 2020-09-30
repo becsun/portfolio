@@ -1,6 +1,7 @@
 import React from 'react'
-import { Typography, Grid, Box, makeStyles } from '@material-ui/core'
+import { Typography, Box, makeStyles } from '@material-ui/core'
 import Typed from 'react-typed'
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 //CSS Styles
 const useStyles = makeStyles(theme => ({
@@ -27,21 +28,24 @@ const useStyles = makeStyles(theme => ({
 const Home = () => {
   const classes = useStyles()
   return (
-    <Box className={classes.container}>
-      <Typography className={classes.title} variant="h1">
-        <Typed strings={['Bec Sun']}
-          typeSpeed={100}
-        />
-      </Typography>
-      <br />
-      <Typography className={classes.subtitle} variant="h3">
-        <Typed strings={['Junior', 'Full Stack', 'Developer']}
-          typeSpeed={70}
-          backspeed={60}
-          loop
-        />
-      </Typography>
-    </Box>
+    <ScrollableAnchor id={'Home'}>
+      <Box className={classes.container}>
+        <Typography className={classes.title} variant="h1">
+          <Typed strings={['Bec Sun']}
+            typeSpeed={100}
+          />
+        </Typography>
+        <br />
+        <Typography className={classes.subtitle} variant="h3">
+          <Typed strings={['Junior', 'Full Stack', 'Developer']}
+            typeSpeed={70}
+            backspeed={60}
+            loop
+          />
+        </Typography>
+      </Box>
+    </ScrollableAnchor>
+
 
   )
 }

@@ -1,7 +1,9 @@
 import React from 'react'
-import { Box, makeStyles, Typography, Button } from '@material-ui/core'
+import { Box, makeStyles, Typography } from '@material-ui/core'
 import Typed from 'react-typed'
+import IconButton from '@material-ui/core/IconButton'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
 
 
 
@@ -20,7 +22,6 @@ const useStyles = makeStyles(theme => ({
     color: 'white'
   }
 }))
-
 
 
 const AboutMe = () =>  {
@@ -45,12 +46,12 @@ const AboutMe = () =>  {
           With this change in career I know I can bring skills I’ve learnt managing salons and the food stall into the tech industry. I’m looking forward to being challenged and continually learning new skills that will help me thrive.
           </Typography>
         </ScrollableAnchor>
-        <Button>
-          <Typography>
-            Go Up
-          </Typography>
-        </Button>
 
+
+        <IconButton href='#Home'size="large" aria-label="up">
+          <ArrowUpwardIcon  />
+        </IconButton>
+     
 
 
       </Box>
