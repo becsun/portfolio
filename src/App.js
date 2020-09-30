@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link, Typography } from '@material-ui/core'
 
 import Projects from './components/Projects'
 import AboutMe from  './components/AboutMe'
@@ -20,10 +19,7 @@ const App = () => {
       <AboutMe />
       <Projects />
       <Footer />
-
-
     </div>
-
   )
 }
 export default App

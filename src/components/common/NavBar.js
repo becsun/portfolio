@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box , Link , makeStyles , Typography ,ThemeProvider, createMuiTheme } from '@material-ui/core'
-import ScrollableAnchor from 'react-scrollable-anchor'
+import {  createMuiTheme } from '@material-ui/core'
 
 
 //CSS Styles
@@ -21,22 +20,17 @@ const theme = createMuiTheme({
 
 
 const Navbar = () => {
-  // const classes = useStyles()
   return (
 
     <div>
-      <a href='#About'> About </a>
+      <a  href='#About'> About </a>
       <a href='#Projects'> Projects </a>
-
-      <ScrollableAnchor id={'About'}>
-        <div> Hello World </div>
-      </ScrollableAnchor>
-      <ScrollableAnchor id={'Projects'}>
-        <div> How are you world? </div>
-      </ScrollableAnchor>
+      <a href='#Technologies'> Technologies </a>
+      <a href='#Contact'> Contact </a>
     </div>
-      
+
   )
 }
+
 
 export default Navbar
