@@ -3,11 +3,19 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import {  Box, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
+  mainbox: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    width: '100%'
+  },
   icons: {
     display: 'flex',
+    flexDirection: 'row',
     color: 'white',
-    height: '40px',
-    weight: '20px'
+    padding: '2%',
+    fontSize: '5em'
   }
 })
 
@@ -17,35 +25,69 @@ const Technologies = () => {
 
   return (
 
-    <Box >
+    <Box className={classes.mainbox}>
 
-        <ScrollableAnchor id={'Technologies'}>
+      <ScrollableAnchor id={'Technologies'}>
         <span className={classes.icons}>
           <i className='devicon-django-plain'/>
-          </span>
-        </ScrollableAnchor>
+        </span>
+      </ScrollableAnchor>
+      <span className={classes.icons}>
+        <i className='devicon-express-original-wordmark'/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-git-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-github-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-heroku-original-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-html5-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-javascript-plain"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-jquery-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-mongodb-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-mysql-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-nodejs-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-npm-original-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-postgresql-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-python-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-react-original-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-sass-original"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-visualstudio-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-yarn-plain-wordmark"/>
+      </span>
+      <span className={classes.icons}>
+        <i className="devicon-css3-plain-wordmark"/>
+      </span>
 
 
-
-
-      <i className='devicon-express-original-wordmark'/>
-      <i className="devicon-git-plain-wordmark"/>
-      <i className="devicon-github-plain-wordmark"/>
-      <i className="devicon-heroku-original-wordmark"/>
-      <i className="devicon-html5-plain-wordmark"/>
-      <i className="devicon-javascript-plain"/>
-      <i className="devicon-jquery-plain-wordmark"/>
-      <i className="devicon-mongodb-plain-wordmark"/>
-      <i className="devicon-mysql-plain-wordmark"/>
-      <i className="devicon-nodejs-plain-wordmark"/>
-      <i className="devicon-npm-original-wordmark"/>
-      <i className="devicon-postgresql-plain-wordmark"/>
-      <i className="devicon-python-plain-wordmark"/>
-      <i className="devicon-react-original-wordmark"/>
-      <i className="devicon-sass-original"/>
-      <i className="devicon-visualstudio-plain"/>
-      <i className="devicon-yarn-plain-wordmark"/>
-      <i className="devicon-css3-plain-wordmark"/>
 
     </Box>
 
