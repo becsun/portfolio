@@ -4,9 +4,14 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 const Footer = () => {
 
   return (
-    <ScrollableAnchor id={'Contact'}>
-    <h1>hello</h1>
-  </ScrollableAnchor>
+    <div>
+      {/* <ScrollableAnchor id={'Contact'}> */}
+      <h1>hello</h1>
+
+      {/* </ScrollableAnchor>
+   <i className='devicon-django-plain'/> */}
+    </div>
+
 
   )
 }
