@@ -26,7 +26,6 @@ const Technologies = () => {
   return (
 
     <Box className={classes.mainbox}>
-
       <ScrollableAnchor id={'Technologies'}>
         <span className={classes.icons}>
           <i className='devicon-django-plain'/>
@@ -86,9 +85,6 @@ const Technologies = () => {
       <span className={classes.icons}>
         <i className="devicon-css3-plain-wordmark"/>
       </span>
-
-
-
     </Box>
 
   )
