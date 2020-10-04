@@ -10,12 +10,16 @@ import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
 
 const useStyles = makeStyles(theme => ({
   container: {
-    display: 'fixed',
-    marginTop: '60%',
+    display: 'flex',
+    flexDirection: 'column',
+    marginTop: '20%',
     width: '100%',
     textAlign: 'center'
   },
   title: {
+    display: 'flex',
+    justifyContent: 'center',
+
     color: 'white'
   },
   text: {
@@ -31,7 +35,7 @@ const AboutMe = () =>  {
     <>
       <Box className={classes.container}>
         <Typography className={classes.title}>
-          <Typed strings={['About Me']}
+          <Typed  strings={['About Me']}
             typeSpeed={100}
           />
         </Typography>

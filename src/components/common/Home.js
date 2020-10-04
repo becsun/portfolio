@@ -6,20 +6,36 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 //CSS Styles
 const useStyles = makeStyles(theme => ({
   container: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'relative',
+    width: '100%',
+    justifyContent: 'center',
+    alignContent: 'center',
     textAlign: 'center'
   },
   title: {
+    display: 'flex',
+    alignContent: 'center',
+    justifyContent: 'center',
+    position: 'relative',
     h1: '70px',
-    color: 'white'
+    color: 'white',
+    width: '100%',
+    paddingTop: '20%'
+
+  },
+  h1: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+    width: '100%',
+    paddingTop: '40%',
+    transform: 'translate(-50%, -50%)'
 
   },
   subtitle: {
-    marginBottom: '4rem',
     color: 'white',
     fontSize: '50px'
   }
@@ -31,7 +47,7 @@ const Home = () => {
     <ScrollableAnchor id={'Home'}>
       <Box className={classes.container}>
         <Typography className={classes.title} variant="h1">
-          <Typed strings={['Bec Sun']}
+          <Typed  strings={['Bec Sun']}
             typeSpeed={100}
           />
         </Typography>

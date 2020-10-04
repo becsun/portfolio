@@ -8,6 +8,7 @@ const useStyles = makeStyles({
   mainBox: {
     display: 'flex',
     justifyContent: 'space-evenly'
+
   },
   leftLink: {
     color: 'white',
@@ -43,7 +44,7 @@ const Navbar = () => {
           <a className={classes.leftLink} href='#Projects'> Projects </a>
         </Box>
         <Box className={classes.rightBox}>
-          <a className={classes.rightLink} href='#Technologies'> Technologies </a>
+          <a className={classes.rightLink} href='#Technologies'> Experience </a>
         </Box>
         <Box className={classes.rightBox}>
           <a className={classes.rightLink} href='#Contact'> Contact </a>

@@ -15,13 +15,13 @@ const useStyles = makeStyles({
     minWidth: 275
   },
   title: {
-    fontSize: 14
+    fontSize: 30
   },
   pos: {
     marginBottom: 12
   },
   image: {
-    // display: 'relative',
+    position: 'relative',
     display: 'flex',
     width: '60%',
     height: '100%',
@@ -33,16 +33,30 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-    paddingTop: '10%'
+    paddingTop: '10%',
+    color: 'white',
+    fontSize: '30px'
   },
   smallContainer: {
     position: 'relative',
     display: 'flex',
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    flexDirection: 'column'
-  }
+    color: 'white'
 
+  },
+  icon: {
+    display: 'flex',
+    position: 'relative',
+    fontSize: '25px'
+  },
+  iconPosition: {
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'absolute',
+    marginLeft: '61%'
+  }
 })
 
 const Projects = () => {
@@ -51,40 +65,63 @@ const Projects = () => {
 
     <ScrollableAnchor id={'Projects'}>
       <Box className={classes.mainContainer}>
-        <Typography>
+        <Typography className={classes.title}>
           Projects
         </Typography>
-        <Box className={classes.smallContainer}>
-          <i className="fas fa-link"/>
-          <Icon size="large" aria-label="github">
-            <GitHubIcon />
-          </Icon>
-          <img src={Homepage} className={classes.image} alt='project4'/>
+
+        <Box className={classes.icon}>
+          <Box className={classes.iconPosition}>
+            <a className={classes.links} href="https://pimps-pinups.herokuapp.com/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+
+            <a className={classes.links} href="https://github.com/becsun/pimps-site" target="_blank" rel='noopener  noreferrer'>
+              <Icon aria-label="github">
+                <GitHubIcon />
+              </Icon>
+            </a>
+          </Box >
+
+          <img  src={Homepage} className={classes.image} alt='project4'/>
 
         </Box>
 
 
         <Box className={classes.smallContainer}>
-          <i className="fas fa-link"/>
-          <Icon size="large" aria-label="github">
-            <GitHubIcon />
-          </Icon>
+          <Box>
+            <a className={classes.links} href="" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+            <a className={classes.links} href="https://github.com/becsun" target="_blank" rel='noopener  noreferrer'>
+              <Icon aria-label="github">
+                <GitHubIcon />
+              </Icon>
+            </a>
+          </Box >
+
           <img src={Nalu} className={classes.image} alt='project3'/>
         </Box>
 
-        <Box className={classes.smallContainer}>
-          <i className="fas fa-link"/>
-          <Icon size="large" aria-label="github">
-            <GitHubIcon />
-          </Icon>
+        <Box className={classes.icon}>
+          <Box className={classes.iconPosition}>
+            <a className={classes.links} href="https://a-drink-to-suit-your-mood.netlify.app/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+            <a className={classes.links} href="https://github.com/becsun/SEI-PROJECT2-COCKTAILS-" target="_blank" rel='noopener  noreferrer'>
+              <Icon aria-label="github">
+                <GitHubIcon />
+              </Icon>
+            </a>
+          </Box >
           <img src={Alcohol} className={classes.image} alt='project2'/>
+
+
         </Box>
 
         <Box className={classes.smallContainer}>
-          <i className="fas fa-link"/>
-          <Icon size="large" aria-label="github">
-            <GitHubIcon />
-          </Icon>
+          <Box>
+            <a className={classes.links} href="https://becsun.github.io/SEI-project-one/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+            <a className={classes.links} href="https://github.com/becsun/SEI-project-one" target="_blank" rel='noopener  noreferrer'>
+              <Icon aria-label="github">
+                <GitHubIcon />
+              </Icon>
+            </a>
+          </Box >
+
           <img src={Goo} className={classes.image} alt='project1'/>
         </Box>
       </Box>
