@@ -12,14 +12,14 @@ const useStyles = makeStyles(theme => ({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '20%',
+    marginTop: '25%',
     width: '100%',
     textAlign: 'center'
   },
   title: {
     display: 'flex',
     justifyContent: 'center',
-
+    marginTop: '30%',
     color: 'white'
   },
   text: {

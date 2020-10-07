@@ -20,6 +20,16 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12
   },
+  image2: {
+    position: 'relative',
+    display: 'flex',
+    width: '60%',
+    height: '100%',
+    paddingBottom: '10%',
+    marginLeft: '30%'
+  }, 
+
+
   image: {
     position: 'relative',
     display: 'flex',
@@ -55,8 +65,18 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     position: 'absolute',
-    marginLeft: '61%'
+    marginLeft: '60%',
+    marginTop: '5%'
+  },
+  iconPosition2: {
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'absolute',
+    marginRight: '62%',
+    marginBottom: '30%',
+    fontSize: '25px'
   }
+
 })
 
 const Projects = () => {
@@ -78,6 +98,12 @@ const Projects = () => {
                 <GitHubIcon />
               </Icon>
             </a>
+            <Typography>
+            HTML5 | SCSS | JavaScript | React |Python| Django | PostgreSQL
+            </Typography>
+            <Typography>
+            I developed the website for Pimps and Pinups, a hair salon located in the heart of Shoreditch, London. 
+            </Typography>
           </Box >
 
           <img  src={Homepage} className={classes.image} alt='project4'/>
@@ -86,16 +112,22 @@ const Projects = () => {
 
 
         <Box className={classes.smallContainer}>
-          <Box>
-            <a className={classes.links} href="" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
-            <a className={classes.links} href="https://github.com/becsun" target="_blank" rel='noopener  noreferrer'>
+          <Box className={classes.iconPosition2}>
+            <a className={classes.links} href="https://naluwave.herokuapp.com/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+            <a className={classes.links} href="https://github.com/Zarathustrah/SEI-Project-3" target="_blank" rel='noopener  noreferrer'>
               <Icon aria-label="github">
                 <GitHubIcon />
               </Icon>
             </a>
+            <Typography>
+            HTML5 | SCSS | JavaScript | React | MongoDB & Mongoose |  Bcrypt & JWT
+            </Typography>
+            <Typography>
+            product aims to give users all current information related to the best surfing spots around the world. The user will have the ability to search any surfing spots by location which will display all detailed cards.
+            </Typography>
           </Box >
 
-          <img src={Nalu} className={classes.image} alt='project3'/>
+          <img src={Nalu} className={classes.image2} alt='project3'/>
         </Box>
 
         <Box className={classes.icon}>
@@ -106,23 +138,35 @@ const Projects = () => {
                 <GitHubIcon />
               </Icon>
             </a>
+            <Typography>
+            HTML | SCSS | JavaScript | React | node.js |  TheCocktailDB API |
+            </Typography>
+            <Typography>
+            Choose a cocktail they would like to make themselves. By clicking on the tick you will see the instructions and ingredients.
+            </Typography>
+
           </Box >
           <img src={Alcohol} className={classes.image} alt='project2'/>
-
 
         </Box>
 
         <Box className={classes.smallContainer}>
-          <Box>
+          <Box className={classes.iconPosition2}>
             <a className={classes.links} href="https://becsun.github.io/SEI-project-one/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
             <a className={classes.links} href="https://github.com/becsun/SEI-project-one" target="_blank" rel='noopener  noreferrer'>
               <Icon aria-label="github">
                 <GitHubIcon />
               </Icon>
             </a>
+            <Typography>
+              HTML | CSS | JavaScript
+            </Typography>
+            <Typography>
+            The aim of the game is to shoot the hair 'goo' at the the on coming clients before they reach the other side or into the hand of 'goo.' Be careful to not get hit my their tears otherwise the game will be over.
+            </Typography>
           </Box >
 
-          <img src={Goo} className={classes.image} alt='project1'/>
+          <img src={Goo} className={classes.image2} alt='project1'/>
         </Box>
       </Box>
     </ScrollableAnchor>
