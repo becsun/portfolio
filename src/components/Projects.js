@@ -12,13 +12,15 @@ import Alcohol from '../styles/images/Alcohol.png'
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275
+    minWidth: '275'
   },
   title: {
-    fontSize: 30
+    fontSize: '50px',
+    fontFamily: 'Bungee Shade, cursive',
+    paddingBottom: '5%'
   },
   pos: {
-    marginBottom: 12
+    marginBottom: '12'
   },
   image2: {
     position: 'relative',
@@ -28,8 +30,6 @@ const useStyles = makeStyles({
     paddingBottom: '10%',
     marginLeft: '30%'
   }, 
-
-
   image: {
     position: 'relative',
     display: 'flex',
@@ -59,7 +59,7 @@ const useStyles = makeStyles({
   icon: {
     display: 'flex',
     position: 'relative',
-    fontSize: '25px'
+    fontSize: '25px'  
   },
   iconPosition: {
     display: 'flex',
@@ -72,9 +72,29 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     position: 'absolute',
+    marginTop: '10%',
     marginRight: '62%',
     marginBottom: '30%',
     fontSize: '25px'
+  },
+  textBox: {
+    display: 'flex',
+    marginLeft: '10%',
+    marginRight: '10%',
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: '21px'
+  },
+  textBox2: {
+    display: 'flex',
+    marginLeft: '10%',
+    marginRight: '10%',
+    fontFamily: 'Montserrat, sans-serif'
+  },
+  links: {
+    color: 'white'
+  },
+  centerLink: {
+    paddingLeft: '20%'
   }
 
 })
@@ -91,17 +111,19 @@ const Projects = () => {
 
         <Box className={classes.icon}>
           <Box className={classes.iconPosition}>
-            <a className={classes.links} href="https://pimps-pinups.herokuapp.com/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+            <Box className={classes.centerLink}>
+              <a className={classes.links} href="https://pimps-pinups.herokuapp.com/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
 
-            <a className={classes.links} href="https://github.com/becsun/pimps-site" target="_blank" rel='noopener  noreferrer'>
-              <Icon aria-label="github">
-                <GitHubIcon />
-              </Icon>
-            </a>
-            <Typography>
-            HTML5 | SCSS | JavaScript | React |Python| Django | PostgreSQL
+              <a className={classes.links} href="https://github.com/becsun/pimps-site" target="_blank" rel='noopener  noreferrer'>
+                <Icon aria-label="github">
+                  <GitHubIcon />
+                </Icon>
+              </a>
+            </Box>    
+            <Typography className={classes.textBox}>
+            HTML5 | SCSS | JavaScript | React | Python |  Django | PostgreSQL
             </Typography>
-            <Typography>
+            <Typography className={classes.textBox2}>
             I developed the website for Pimps and Pinups, a hair salon located in the heart of Shoreditch, London. 
             </Typography>
           </Box >
@@ -113,16 +135,19 @@ const Projects = () => {
 
         <Box className={classes.smallContainer}>
           <Box className={classes.iconPosition2}>
-            <a className={classes.links} href="https://naluwave.herokuapp.com/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
-            <a className={classes.links} href="https://github.com/Zarathustrah/SEI-Project-3" target="_blank" rel='noopener  noreferrer'>
-              <Icon aria-label="github">
-                <GitHubIcon />
-              </Icon>
-            </a>
-            <Typography>
-            HTML5 | SCSS | JavaScript | React | MongoDB & Mongoose |  Bcrypt & JWT
+            <Box className={classes.centerLink}>
+              <a className={classes.links} href="https://naluwave.herokuapp.com/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+              <a className={classes.links} href="https://github.com/Zarathustrah/SEI-Project-3" target="_blank" rel='noopener  noreferrer'>
+                <Icon aria-label="github">
+                  <GitHubIcon />
+                </Icon>
+              </a>
+            </Box>
+          
+            <Typography className={classes.textBox}>
+            HTML5 | SCSS | JavaScript | React | MongoDB & Mongoose | Bcrypt & JWT
             </Typography>
-            <Typography>
+            <Typography className={classes.textBox2}>
             product aims to give users all current information related to the best surfing spots around the world. The user will have the ability to search any surfing spots by location which will display all detailed cards.
             </Typography>
           </Box >
@@ -132,16 +157,18 @@ const Projects = () => {
 
         <Box className={classes.icon}>
           <Box className={classes.iconPosition}>
-            <a className={classes.links} href="https://a-drink-to-suit-your-mood.netlify.app/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
-            <a className={classes.links} href="https://github.com/becsun/SEI-PROJECT2-COCKTAILS-" target="_blank" rel='noopener  noreferrer'>
-              <Icon aria-label="github">
-                <GitHubIcon />
-              </Icon>
-            </a>
-            <Typography>
+            <Box className={classes.centerLink}>
+              <a className={classes.links} href="https://a-drink-to-suit-your-mood.netlify.app/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+              <a className={classes.links} href="https://github.com/becsun/SEI-PROJECT2-COCKTAILS-" target="_blank" rel='noopener  noreferrer'>
+                <Icon aria-label="github">
+                  <GitHubIcon />
+                </Icon>
+              </a>
+            </Box>       
+            <Typography className={classes.textBox}>
             HTML | SCSS | JavaScript | React | node.js |  TheCocktailDB API |
             </Typography>
-            <Typography>
+            <Typography className={classes.textBox2}>
             Choose a cocktail they would like to make themselves. By clicking on the tick you will see the instructions and ingredients.
             </Typography>
 
@@ -152,16 +179,18 @@ const Projects = () => {
 
         <Box className={classes.smallContainer}>
           <Box className={classes.iconPosition2}>
-            <a className={classes.links} href="https://becsun.github.io/SEI-project-one/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
-            <a className={classes.links} href="https://github.com/becsun/SEI-project-one" target="_blank" rel='noopener  noreferrer'>
-              <Icon aria-label="github">
-                <GitHubIcon />
-              </Icon>
-            </a>
-            <Typography>
+            <Box className={classes.centerLink}>
+              <a className={classes.links} href="https://becsun.github.io/SEI-project-one/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link"/></a>
+              <a className={classes.links} href="https://github.com/becsun/SEI-project-one" target="_blank" rel='noopener  noreferrer'>
+                <Icon aria-label="github">
+                  <GitHubIcon />
+                </Icon>
+              </a>
+            </Box>
+            <Typography className={classes.textBox}>
               HTML | CSS | JavaScript
             </Typography>
-            <Typography>
+            <Typography className={classes.textBox2}>
             The aim of the game is to shoot the hair 'goo' at the the on coming clients before they reach the other side or into the hand of 'goo.' Be careful to not get hit my their tears otherwise the game will be over.
             </Typography>
           </Box >

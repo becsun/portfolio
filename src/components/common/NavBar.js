@@ -1,5 +1,6 @@
 import React from 'react'
 import {  Box, makeStyles } from '@material-ui/core'
+// import { slide as Menu } from 'react-burger-menu'
 
 
 //CSS Styles
@@ -7,7 +8,9 @@ import {  Box, makeStyles } from '@material-ui/core'
 const useStyles = makeStyles({
   mainBox: {
     display: 'flex',
-    justifyContent: 'space-evenly'
+    position: 'relative',
+    justifyContent: 'space-evenly',
+    fontFamily: 'Bungee Shade, cursive'
 
   },
   leftLink: {

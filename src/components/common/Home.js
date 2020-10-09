@@ -16,28 +16,20 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     display: 'flex',
+    fontFamily: 'Bungee Shade, cursive',
     alignContent: 'center',
     justifyContent: 'center',
     position: 'relative',
-    h1: '70px',
+    fontSize: '150px',
     color: 'white',
     width: '100%',
-    paddingTop: '20%'
-
-  },
-  h1: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    position: 'relative',
-    width: '100%',
-    paddingTop: '40%',
-    transform: 'translate(-50%, -50%)'
+    paddingTop: '15%'
 
   },
   subtitle: {
     color: 'white',
-    fontSize: '50px'
+    fontSize: '75px',
+    fontFamily: 'Bungee Shade, cursive'
   }
 }))
 
@@ -54,8 +46,8 @@ const Home = () => {
         <br />
         <Typography className={classes.subtitle} variant="h3">
           <Typed strings={['Junior', 'Full Stack', 'Developer']}
-            typeSpeed={70}
-            backspeed={60}
+            typeSpeed={100}
+            backspeed={50}
             loop
           />
         </Typography>

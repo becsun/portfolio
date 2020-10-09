@@ -12,7 +12,6 @@ const useStyles = makeStyles(theme => ({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '25%',
     width: '100%',
     textAlign: 'center'
   },
@@ -20,13 +19,19 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     marginTop: '30%',
-    color: 'white'
+    color: 'white',
+    fontFamily: 'Bungee Shade, cursive',
+    fontSize: '50px'
   },
   text: {
-    color: 'white'
+    color: 'white',
+    marginLeft: '10%',
+    marginRight: '10%',
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: '20px',
+    textJustify: 'justify'
   }
 }))
-
 
 const AboutMe = () =>  {
 
@@ -43,11 +48,14 @@ const AboutMe = () =>  {
         <ScrollableAnchor id={'About'}>
           <Typography className={classes.text}>
           After a great experience of 16 years as a hairdresser, I’m ready to take a leap into an exciting career as a Software Engineer.
-          While hairdressing, compelled by my eternal love for food, I started a side hustle in the food industry, called House of Hong. This showed me that I am able to work in diverse ways and that many of my everyday skills were transferable and could ultimately lead to success.
-
-          My interest in the tech industry was inspired by my friends who are developers as well as my clients, when speaking passionately about projects they were working on. Enrolling into GA’s Immersive programme was the next step into breaking into industry.
-
-          With this change in career I know I can bring skills I’ve learnt managing salons and the food stall into the tech industry. I’m looking forward to being challenged and continually learning new skills that will help me thrive.
+            <br/>
+            <br/>
+          I was exposed to this industry through friends and clients and was always facinated by how applications were developed and also the way development kept evolving. 
+          After doing a bit of self teaching i decided to challenge myself with the 12 week Full Stack Immersive course at General Assembly.
+            <br/>
+            <br/>
+          Despite being at the beginning of my career, I believe I can bring a huge amount to this industry. I’m committed fully to becoming the best developer I can be. I’m a tenacious hard worker, and not one to give up. I have sought out mentors and am excited to see where this journey will take me.
+      
           </Typography>
         </ScrollableAnchor>
 
