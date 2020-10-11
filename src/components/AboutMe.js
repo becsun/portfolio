@@ -30,6 +30,9 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Montserrat, sans-serif',
     fontSize: '20px',
     textJustify: 'justify'
+  },
+  button: {
+    color: 'white'
   }
 }))
 
@@ -59,7 +62,7 @@ const AboutMe = () =>  {
           </Typography>
         </ScrollableAnchor>
 
-        <IconButton href='#Home'size="large" aria-label="up">
+        <IconButton  className={classes.button} href='#Home'size="large" aria-label="up">
           <ArrowUpwardIcon />
         </IconButton>
       </Box>

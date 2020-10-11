@@ -18,7 +18,6 @@ const useStyles = makeStyles({
     fontSize: '40px',
     textDecoration: 'none'
 
-
   },
   rightLink: {
     color: 'white',
@@ -41,7 +40,7 @@ const Navbar = () => {
     <div>
       <Box className={classes.mainBox}>
         <Box className={classes.leftBox} >
-          <a className={classes.leftLink} href='#About'> About </a>
+          {/* <a className={classes.leftLink} href='#About'> About </a>
         </Box>
         <Box className={classes.leftBox}>
           <a className={classes.leftLink} href='#Projects'> Projects </a>
@@ -50,7 +49,7 @@ const Navbar = () => {
           <a className={classes.rightLink} href='#Technologies'> Experience </a>
         </Box>
         <Box className={classes.rightBox}>
-          <a className={classes.rightLink} href='#Contact'> Contact </a>
+          <a className={classes.rightLink} href='#Contact'> Contact </a> */}
         </Box>
       </Box>
     </div>

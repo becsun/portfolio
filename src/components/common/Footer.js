@@ -7,12 +7,14 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
 
 const useStyles = makeStyles({
-  h1: {
+  contact: {
     display: 'flex',
     position: 'relative',
     width: '100%',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    fontFamily: 'Bungee Shade, cursive',
+    fontSize: '25px'
 
 
   },
@@ -25,9 +27,10 @@ const useStyles = makeStyles({
   links: {
     display: 'flex',
     position: 'relative',
-
+    fontFamily: 'Montserrat, sans-serif',
     color: 'white',
-    textDecoration: 'none'
+    textDecoration: 'none',
+    fontSize: '20px'
 
   },
   linkbox: {
@@ -36,7 +39,7 @@ const useStyles = makeStyles({
     alignItems: 'flex-end',
     justifyContent: 'space-evenly',
     width: '100%',
-    color: 'white',
+    color: 'white'
   },
   individualbox: {
     display: 'flex',
@@ -53,7 +56,7 @@ const Footer = () => {
       <Box className={classes.box}>
 
         <ScrollableAnchor id={'Contact'}>
-          <Typography className={classes.h1}>
+          <Typography className={classes.contact}>
             <h1>Contact</h1>
           </Typography>
         </ScrollableAnchor>

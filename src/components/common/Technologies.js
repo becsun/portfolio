@@ -19,8 +19,9 @@ const useStyles = makeStyles({
   },
   heading: {
     color: 'white',
-    fontSize: '2em',
-    textAlign: 'center'
+    fontSize: '50px',
+    textAlign: 'center',
+    fontFamily: 'Bungee Shade, cursive'
   }
 })
 
