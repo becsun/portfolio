@@ -28,7 +28,10 @@ const useStyles = makeStyles({
     display: 'flex',
     width: '50%',
     height: '40%',
-    marginLeft: '10%'
+    marginLeft: '10%',
+    '@media (max-width:800px)': {
+      marginLeft: '-10%'
+    }
   },
   mainContainer: {
     position: 'relative',
