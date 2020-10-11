@@ -54,16 +54,13 @@ const Footer = () => {
   return (
     <div>
       <Box className={classes.box}>
-
         <ScrollableAnchor id={'Contact'}>
           <Typography className={classes.contact}>
             <h1>Contact</h1>
           </Typography>
         </ScrollableAnchor>
-
       </Box>
       <Box className={classes.linkbox}>
-
         <Box className={classes.individualbox}>
           <Icon size="large" aria-label="github">
             <GitHubIcon />
@@ -72,8 +69,6 @@ const Footer = () => {
             <a className={classes.links} href="https://github.com/becsun" target="_blank" rel='noopener  noreferrer'> github.com/becsun</a>
           </Typography>
         </Box>
-
-
         <Box className={classes.individualbox}>
           <Icon size="large" aria-label="email">
             <EmailIcon />
@@ -82,7 +77,6 @@ const Footer = () => {
             <a className={classes.links} href="mailto:becsun@icloud.com" target="_blank" rel='noopener noreferrer' >becsun@icloud.com</a>
           </Typography>
         </Box>
-
         <Box className={classes.individualbox}>
           <Icon size="large" aria-label="linkedIn">
             <LinkedInIcon />
@@ -91,14 +85,7 @@ const Footer = () => {
             <a className={classes.links} href="https://www.linkedin.com/in/bec-sun/" target="_blank" rel='noopener  noreferrer'>bec-sun</a>
           </Typography>
         </Box>
-
       </Box>
-
-
-
-
-
-
     </div>
 
 

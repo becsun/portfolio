@@ -71,7 +71,6 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    // marginTop: '5%',
     marginBottom: '10%',
     fontSize: '25px',
     '@media (max-width:800px)': {
