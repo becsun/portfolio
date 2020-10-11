@@ -82,7 +82,8 @@ const useStyles = makeStyles({
     marginBottom: '10%',
     fontSize: '25px',
     '@media (max-width:800px)': {
-      fontSize: '10px'
+      fontSize: '10px',
+      marginLeft: '0%'
     },
     marginLeft: '10%',
     textJustify: 'justify'
