@@ -10,13 +10,10 @@ import IconButton from '@material-ui/core/IconButton'
 
 
 const useStyles = makeStyles({
-  root: {
-    minWidth: '275'
-  },
   title: {
     fontSize: '50px',
     fontFamily: 'Bungee Shade, cursive',
-    paddingBottom: '5%'
+    paddingBottom: '10%'
   },
   image2: {
     position: 'relative',
@@ -40,8 +37,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     flexDirection: 'column',
     paddingTop: '10%',
-    color: 'white',
-    fontSize: '30px'
+    color: 'white'
   },
   smallContainer: {
     position: 'relative',
@@ -49,13 +45,17 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    color: 'white'
+    color: 'white',
+    marginTop: '5%'
   },
   icon: {
     display: 'flex',
     flexDirection: 'row-reverse',
     position: 'relative',
     fontSize: '25px',
+    '@media (max-width:800px)': {
+      fontSize: '10px'
+    },
     marginBottom: '5%'
   },
   iconPosition: {
@@ -63,7 +63,7 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     position: 'relative',
     marginTop: '5%',
-    marginBottom: '20%',
+    marginBottom: '10%',
     marginRight: '10%',
     textJustify: 'justify'
   },
@@ -71,9 +71,12 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    marginTop: '10%',
-    marginBottom: '20%',
+    // marginTop: '5%',
+    marginBottom: '10%',
     fontSize: '25px',
+    '@media (max-width:800px)': {
+      fontSize: '10px'
+    },
     marginLeft: '10%',
     textJustify: 'justify'
   },
@@ -83,7 +86,10 @@ const useStyles = makeStyles({
     marginLeft: '5%',
     marginRight: '5%',
     fontFamily: 'Montserrat, sans-serif',
-    fontSize: '21px',
+    fontSize: '18px',
+    '@media (max-width:800px)': {
+      fontSize: '10px'
+    },
     textJustify: 'justify'
   },
   textBox2: {
@@ -92,7 +98,11 @@ const useStyles = makeStyles({
     marginLeft: '5%',
     marginRight: '5%',
     fontFamily: 'Montserrat, sans-serif',
-    textJustify: 'justify'
+    textJustify: 'justify',
+    fontSize: '18px',
+    '@media (max-width:800px)': {
+      fontSize: '10px'
+    }
   },
   links: {
     color: 'white',
@@ -106,8 +116,15 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     color: 'white',
     marginBottom: '5%'
+  },
+  media: {
+    fontSize: '25px',
+    '@media (max-width:800px)': {
+      fontSize: '10px'
+    }
   }
 })
+
 
 const Projects = () => {
   const classes = useStyles()
@@ -124,7 +141,7 @@ const Projects = () => {
                 <a className={classes.links} href="https://pimps-pinups.herokuapp.com/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link" /></a>
                 <a className={classes.links} href="https://github.com/becsun/pimps-site" target="_blank" rel='noopener  noreferrer'>
                   <Icon aria-label="github">
-                    <GitHubIcon />
+                    <GitHubIcon className={classes.media}/>
                   </Icon>
                 </a>
               </Box>
@@ -143,7 +160,7 @@ const Projects = () => {
                 <a className={classes.links} href="https://naluwave.herokuapp.com/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link" /></a>
                 <a className={classes.links} href="https://github.com/Zarathustrah/SEI-Project-3" target="_blank" rel='noopener  noreferrer'>
                   <Icon aria-label="github">
-                    <GitHubIcon />
+                    <GitHubIcon className={classes.media}/>
                   </Icon>
                 </a>
               </Box>
@@ -162,7 +179,7 @@ const Projects = () => {
                 <a className={classes.links} href="https://a-drink-to-suit-your-mood.netlify.app/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link" /></a>
                 <a className={classes.links} href="https://github.com/becsun/SEI-PROJECT2-COCKTAILS-" target="_blank" rel='noopener  noreferrer'>
                   <Icon aria-label="github">
-                    <GitHubIcon />
+                    <GitHubIcon className={classes.media}/>
                   </Icon>
                 </a>
               </Box>
@@ -182,7 +199,7 @@ const Projects = () => {
                 <a className={classes.links} href="https://becsun.github.io/SEI-project-one/" target="_blank" rel='noopener  noreferrer'><i className="fas fa-link" /></a>
                 <a className={classes.links} href="https://github.com/becsun/SEI-project-one" target="_blank" rel='noopener  noreferrer'>
                   <Icon aria-label="github">
-                    <GitHubIcon />
+                    <GitHubIcon className={classes.media}/>
                   </Icon>
                 </a>
               </Box>

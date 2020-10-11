@@ -33,6 +33,7 @@ const useStyles = makeStyles({
   },
   linkbox: {
     display: 'flex',
+    flexWrap: 'wrap',
     position: 'relative',
     alignItems: 'flex-end',
     justifyContent: 'space-evenly',

@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   title: {
     display: 'flex',
     justifyContent: 'center',
-    marginTop: '30%',
+    marginTop: '25%',
     color: 'white',
     fontFamily: 'Bungee Shade, cursive',
     fontSize: '50px'
@@ -32,7 +32,8 @@ const useStyles = makeStyles(theme => ({
     textJustify: 'justify'
   },
   button: {
-    color: 'white'
+    color: 'white',
+    marginTop: '10%'
   }
 }))
 
@@ -50,10 +51,10 @@ const AboutMe = () =>  {
         <br/>
         <ScrollableAnchor id={'About'}>
           <Typography className={classes.text}>
-          After a great experience of 16 years as a hairdresser, I’m ready to take a leap into an exciting career as a Software Engineer.
+          After a great experience of 16 years as a hairdresser, I've decided to take the leap into a new exciting career. While hairdressing I started a side hustle in the food industry (my love of food is eternal) called House of Hong. This was a food stall that grew into a Supper Club and showed me that I am able to work in diverse and that many of my everyday skills were transferable and can ultimately lead to success.
             <br/>
             <br/>
-          I was exposed to this industry through friends and clients and was always facinated by how applications were developed and also the way development kept evolving. 
+          I was exposed to this industry through friends and clients, always facinated at how applications are developed and also the way development keeps evolving. 
           After doing a bit of self teaching i decided to challenge myself with the 12 week Full Stack Immersive course at General Assembly.
             <br/>
             <br/>
