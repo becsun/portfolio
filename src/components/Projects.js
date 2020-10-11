@@ -43,6 +43,11 @@ const useStyles = makeStyles({
     position: 'relative',
     display: 'flex',
     flexDirection: 'row',
+    '@media (max-width:800px)': {
+      flexDirection: 'column-reverse',
+      marginLeft: '0%',
+      alignItems: 'center'
+    },
     alignItems: 'center',
     justifyContent: 'center',
     color: 'white',
@@ -54,7 +59,10 @@ const useStyles = makeStyles({
     position: 'relative',
     fontSize: '25px',
     '@media (max-width:800px)': {
-      fontSize: '10px'
+      fontSize: '10px',
+      flexDirection: 'column-reverse',
+      marginLeft: '0%',
+      alignItems: 'center'
     },
     marginBottom: '5%'
   },
@@ -143,13 +151,15 @@ const Projects = () => {
                     <GitHubIcon className={classes.media}/>
                   </Icon>
                 </a>
-              </Box>
+              </Box >
+
               <Typography className={classes.textBox}>
                 HTML5 | SCSS | JavaScript | React | Python |  Django | PostgreSQL
               </Typography>
               <Typography className={classes.textBox2}>
                 I developed the website for a salon in Shoreditch in London called Pimps and Pinups. Users are able to find the suitable stylists and products according to their needs. 
               </Typography>
+        
             </Box >
             <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1169/v1602412094/Screenshot_2020-10-11_at_11.20.46_yxjsjo.png' className={classes.image} alt='project4' />
           </Box>
