@@ -1,6 +1,8 @@
 import React from 'react'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import {  Box, makeStyles, Typography } from '@material-ui/core'
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
+import IconButton from '@material-ui/core/IconButton'
 
 const useStyles = makeStyles({
   mainbox: {
@@ -22,6 +24,13 @@ const useStyles = makeStyles({
     fontSize: '50px',
     textAlign: 'center',
     fontFamily: 'Bungee Shade, cursive'
+  },
+  button: {
+    display: 'flex',
+    justifyContent: 'center',
+    color: 'white',
+    marginTop: '5%',
+    marginBottom: '5%'
   }
 })
 
@@ -97,6 +106,9 @@ const Technologies = () => {
           <i className="devicon-css3-plain-wordmark"/>
         </span>
       </Box>
+      <IconButton className={classes.button} href='#Home' size="large" aria-label="up">
+        <ArrowUpwardIcon />
+      </IconButton>
     </div>
 
 

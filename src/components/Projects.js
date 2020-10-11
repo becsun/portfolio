@@ -18,9 +18,6 @@ const useStyles = makeStyles({
     fontFamily: 'Bungee Shade, cursive',
     paddingBottom: '5%'
   },
-  pos: {
-    marginBottom: '12'
-  },
   image2: {
     position: 'relative',
     display: 'flex',
@@ -53,27 +50,32 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     color: 'white'
-
   },
   icon: {
     display: 'flex',
     flexDirection: 'row-reverse',
     position: 'relative',
-    fontSize: '25px'
+    fontSize: '25px',
+    marginBottom: '5%'
   },
   iconPosition: {
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
-    marginTop: '5%'
+    marginTop: '5%',
+    marginBottom: '20%',
+    marginRight: '10%',
+    textJustify: 'justify'
   },
   iconPosition2: {
     display: 'flex',
     flexDirection: 'column',
     position: 'relative',
     marginTop: '10%',
-    marginBottom: '30%',
-    fontSize: '25px'
+    marginBottom: '20%',
+    fontSize: '25px',
+    marginLeft: '10%',
+    textJustify: 'justify'
   },
   textBox: {
     display: 'flex',
@@ -81,23 +83,29 @@ const useStyles = makeStyles({
     marginLeft: '5%',
     marginRight: '5%',
     fontFamily: 'Montserrat, sans-serif',
-    fontSize: '21px'
+    fontSize: '21px',
+    textJustify: 'justify'
   },
   textBox2: {
     display: 'flex',
     position: 'relative',
     marginLeft: '5%',
     marginRight: '5%',
-    fontFamily: 'Montserrat, sans-serif'
+    fontFamily: 'Montserrat, sans-serif',
+    textJustify: 'justify'
   },
   links: {
-    color: 'white'
+    color: 'white',
+    paddingRight: '1%'
   },
   centerLink: {
     paddingLeft: '20%'
   },
   button: {
-    color: 'white'
+    display: 'flex',
+    justifyContent: 'center',
+    color: 'white',
+    marginBottom: '5%'
   }
 })
 
@@ -124,10 +132,10 @@ const Projects = () => {
                 HTML5 | SCSS | JavaScript | React | Python |  Django | PostgreSQL
               </Typography>
               <Typography className={classes.textBox2}>
-                I developed the website for Pimps and Pinups, a hair salon located in the heart of Shoreditch, London.
+                I developed the website for a salon in Shoreditch in London called Pimps and Pinups. Users are able to find the suitable stylists and products according to their needs. 
               </Typography>
             </Box >
-            <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1100/v1602285997/homepage_lokhon.gif' className={classes.image} alt='project4' />
+            <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1169/v1602412094/Screenshot_2020-10-11_at_11.20.46_yxjsjo.png' className={classes.image} alt='project4' />
           </Box>
           <Box className={classes.smallContainer}>
             <Box className={classes.iconPosition2}>
@@ -143,7 +151,7 @@ const Projects = () => {
                 HTML5 | SCSS | JavaScript | React | MongoDB & Mongoose | Bcrypt & JWT
               </Typography>
               <Typography className={classes.textBox2}>
-                product aims to give users all current information related to the best surfing spots around the world. The user will have the ability to search any surfing spots by location which will display all detailed cards.
+                Nalu is an application for users to explore the best surfing spots around the world. The user will have the ability to search any surfing spots by location which will then display more information on the surfing location.
               </Typography>
             </Box >
             <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1000/v1602286000/Nalu_nzzm1j.png' className={classes.image2} alt='project3' />
@@ -162,7 +170,8 @@ const Projects = () => {
                 HTML | SCSS | JavaScript | React | node.js |  TheCocktailDB API |
               </Typography>
               <Typography className={classes.textBox2}>
-                Choose a cocktail they would like to make themselves. By clicking on the tick you will see the instructions and ingredients.
+                This application is designed for users to 
+                choose a cocktail they would like to make themselves. By clicking on the tick the instructions and ingredients with be displayed.
               </Typography>
             </Box >
             <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1000/v1602285994/Alcohol_dnb4q2.png' className={classes.image} alt='project2' />
@@ -181,10 +190,11 @@ const Projects = () => {
                 HTML | CSS | JavaScript
               </Typography>
               <Typography className={classes.textBox2}>
-                The aim of the game is to shoot the hair 'goo' at the the on coming clients before they reach the other side or into the hand of 'goo.' Be careful to not get hit my their tears otherwise the game will be over.
+                This game is a twist on space invaders.
+                The aim of the game is to fire hair 'goo' at the the on coming people before they reach the other side. 
               </Typography>
             </Box >
-            <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1000/v1602285993/Goo_m1yzmv.gif' className={classes.image2} alt='project1' />
+            <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1169/v1602412053/hair-gooHomepage_akgvhd.png' className={classes.image2} alt='project1' />
           </Box>
         </Box>
       </ScrollableAnchor>

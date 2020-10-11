@@ -15,8 +15,6 @@ const useStyles = makeStyles({
     alignItems: 'center',
     fontFamily: 'Bungee Shade, cursive',
     fontSize: '25px'
-
-
   },
   box: {
     display: 'flex',
@@ -39,7 +37,8 @@ const useStyles = makeStyles({
     alignItems: 'flex-end',
     justifyContent: 'space-evenly',
     width: '100%',
-    color: 'white'
+    color: 'white',
+    marginBottom: '5%'
   },
   individualbox: {
     display: 'flex',
