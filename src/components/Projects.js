@@ -124,7 +124,7 @@ const useStyles = makeStyles({
   centerLink: {
     paddingLeft: '20%',
     '@media (max-width:800px)': {
-      paddingLeft: '0%'
+      paddingLeft: '10%'
     }
   },
   button: {
