@@ -28,7 +28,8 @@ const useStyles = makeStyles(theme => ({
   subtitle: {
     color: 'white',
     fontSize: '75px',
-    fontFamily: 'Bungee Shade, cursive'
+    fontFamily: 'Bungee Shade, cursive',
+    width: '100%'
   }
 }))
 
