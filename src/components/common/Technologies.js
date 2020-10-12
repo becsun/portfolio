@@ -17,11 +17,17 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     color: 'white',
     padding: '2%',
-    fontSize: '5em'
+    fontSize: '5em',
+    '@media (max-width:800px)': {
+      fontSize: '4'
+    }
   },
   heading: {
     color: 'white',
     fontSize: '50px',
+    '@media (max-width:800px)': {
+      fontSize: '40px'
+    },
     textAlign: 'center',
     fontFamily: 'Bungee Shade, cursive'
   },

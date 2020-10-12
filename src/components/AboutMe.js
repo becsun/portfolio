@@ -21,7 +21,10 @@ const useStyles = makeStyles(theme => ({
     marginTop: '25%',
     color: 'white',
     fontFamily: 'Bungee Shade, cursive',
-    fontSize: '50px'
+    fontSize: '50px',
+    '@media (max-width:800px)': {
+      fontSize: '40px'
+    },
   },
   text: {
     color: 'white',

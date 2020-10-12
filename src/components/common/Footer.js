@@ -14,7 +14,11 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     alignItems: 'center',
     fontFamily: 'Bungee Shade, cursive',
-    fontSize: '25px'
+    fontSize: '25px',
+    '@media (max-width:800px)': {
+      fontSize: '20px'
+    }
+
   },
   box: {
     display: 'flex',
@@ -28,7 +32,10 @@ const useStyles = makeStyles({
     fontFamily: 'Montserrat, sans-serif',
     color: 'white',
     textDecoration: 'none',
-    fontSize: '20px'
+    fontSize: '20px',
+    '@media (max-width:800px)': {
+      fontSize: '15px'
+    }
 
   },
   linkbox: {

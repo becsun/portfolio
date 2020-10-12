@@ -22,12 +22,18 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     position: 'relative',
     fontSize: '150px',
+    '@media (max-width:800px)': {
+      fontSize: '100px'
+    },
     color: 'white',
     width: '100%'
   },
   subtitle: {
     color: 'white',
     fontSize: '75px',
+    '@media (max-width:800px)': {
+      fontSize: '45px'
+    },
     fontFamily: 'Bungee Shade, cursive',
     width: '100%'
   }
