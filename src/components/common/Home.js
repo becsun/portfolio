@@ -12,7 +12,8 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     justifyContent: 'center',
     alignContent: 'center',
-    textAlign: 'center'
+    textAlign: 'center',
+    height: '100vh'
   },
   title: {
     display: 'flex',
