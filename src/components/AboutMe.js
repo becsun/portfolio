@@ -51,14 +51,14 @@ const AboutMe = () =>  {
         <br/>
         <ScrollableAnchor id={'About'}>
           <Typography className={classes.text}>
-          After a great experience of 16 years as a hairdresser, I've decided to take the leap into a new exciting career. While hairdressing I started a side hustle in the food industry (my love of food is eternal) called House of Hong. This was a food stall that grew into a Supper Club and showed me that that many of my everyday skills were transferable and can ultimately lead to success.
+          Hey! I’m Bec. Stylist, Software Engineer and Supper Club lover.
+          Starting my career as a hairdresser 16 years ago, I’ve recently pivoted my career and graduated from the General Assembly Full Stack Immersive course ready to start my journey as a Software Engineer.
+
             <br/>
             <br/>
-          I was exposed to this industry through friends and clients, always facinated at how applications are developed and also the way development keeps evolving. 
-          After doing a bit of self teaching i decided to challenge myself with the 12 week Full Stack Immersive course at General Assembly.
-            <br/>
-            <br/>
-          Despite being at the beginning of my career, I believe I can bring a huge amount to this industry. I’m committed fully to becoming the best developer I can be. I’m a tenacious hard worker, and not one to give up. I have sought out mentors and am excited to see where this journey will take me.
+            I love working in multicultural and multidisciplinary teams and am ready to hit the ground running (another thing I love to do) in the technology industry.
+            I love to chat, so drop me an email so we can get to know each other!
+
       
           </Typography>
         </ScrollableAnchor>
