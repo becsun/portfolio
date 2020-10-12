@@ -34,7 +34,7 @@ const useStyles = makeStyles({
     textDecoration: 'none',
     fontSize: '20px',
     '@media (max-width:800px)': {
-      fontSize: '15px'
+      fontSize: '17px'
     }
 
   },

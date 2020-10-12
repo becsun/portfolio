@@ -112,7 +112,9 @@ const useStyles = makeStyles({
     textJustify: 'justify',
     fontSize: '18px',
     '@media (max-width:800px)': {
-      fontSize: '10px'
+      fontSize: '10px',
+      paddingBottom: '-5%',
+      textJustify: 'justify'
     }
   },
   links: {
@@ -120,7 +122,10 @@ const useStyles = makeStyles({
     paddingRight: '1%'
   },
   centerLink: {
-    paddingLeft: '20%'
+    paddingLeft: '20%',
+    '@media (max-width:800px)': {
+      paddingLeft: '0%'
+    }
   },
   button: {
     display: 'flex',

@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     padding: '2%',
     fontSize: '5em',
     '@media (max-width:800px)': {
-      fontSize: '4'
+      fontSize: '4em'
     }
   },
   heading: {
