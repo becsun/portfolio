@@ -23,9 +23,7 @@ const useStyles = makeStyles(theme => ({
     position: 'relative',
     fontSize: '150px',
     color: 'white',
-    width: '100%',
-    paddingTop: '20%'
-
+    width: '100%'
   },
   subtitle: {
     color: 'white',
