@@ -44,7 +44,8 @@ const useStyles = makeStyles({
     justifyContent: 'space-evenly',
     width: '100%',
     color: 'white',
-    marginBottom: '5%'
+    marginBottom: '5%',
+    paddingRight: '1%'
   },
   individualbox: {
     display: 'flex',
