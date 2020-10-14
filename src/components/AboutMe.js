@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     fontSize: '50px',
     '@media (max-width:800px)': {
       fontSize: '40px'
-    },
+    }
   },
   text: {
     color: 'white',
@@ -37,7 +37,7 @@ const useStyles = makeStyles({
     color: 'white',
     marginTop: '10%'
   }
-}))
+})
 
 const AboutMe = () =>  {
 
