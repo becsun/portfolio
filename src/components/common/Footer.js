@@ -18,7 +18,6 @@ const useStyles = makeStyles({
     '@media (max-width:800px)': {
       fontSize: '20px'
     }
-
   },
   box: {
     display: 'flex',
@@ -36,7 +35,6 @@ const useStyles = makeStyles({
     '@media (max-width:800px)': {
       fontSize: '17px'
     }
-
   },
   linkbox: {
     display: 'flex',

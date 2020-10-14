@@ -206,7 +206,7 @@ const Projects = () => {
               </Typography>
               <Typography className={classes.textBox2}>
                 This application is designed for users to 
-                choose a cocktail they would like to make themselves. By clicking on the tick the instructions and ingredients with be displayed.
+                choose a cocktail they would like to make themselves. By clicking on the tick, the instructions and ingredients with be displayed.
               </Typography>
             </Box >
             <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1000/v1602285994/Alcohol_dnb4q2.png' className={classes.image} alt='project2' />
@@ -226,7 +226,7 @@ const Projects = () => {
               </Typography>
               <Typography className={classes.textBox2}>
                 This game is a twist on space invaders.
-                The aim of the game is to fire hair 'goo' at the the on coming people before they reach the other side. 
+                The aim of the game is to fire hair 'goo' at the on coming people before they reach the other side. 
               </Typography>
             </Box >
             <img src='https://res.cloudinary.com/do68wjft3/image/upload/c_scale,h_668,w_1169/v1602412053/hair-gooHomepage_akgvhd.png' className={classes.image2} alt='project1' />

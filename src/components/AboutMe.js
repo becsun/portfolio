@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, makeStyles, Typography } from '@material-ui/core'
-import Typed from 'react-typed'
 import IconButton from '@material-ui/core/IconButton'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
@@ -8,7 +7,7 @@ import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
 
 
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -47,19 +46,17 @@ const AboutMe = () =>  {
     <>
       <Box className={classes.container}>
         <Typography className={classes.title}>
-          <Typed  strings={['About Me']}
-            typeSpeed={100}
-          />
+          About Me
         </Typography>
         <br/>
         <ScrollableAnchor id={'About'}>
           <Typography className={classes.text}>
-          Hey! I’m Bec. Stylist, Software Engineer and Supper Club lover.
+          Hey! I’m Bec. Software Engineer, Stylist and Supper Club lover.
           Starting my career as a hairdresser 16 years ago, I’ve recently pivoted my career and graduated from the General Assembly Full Stack Immersive course ready to start my journey as a Software Engineer.
 
             <br/>
             <br/>
-            I love working in multicultural and multidisciplinary teams and am ready to hit the ground running (another thing I love to do) in the technology industry.
+            I love working in multicultural and multidisciplinary teams and am ready to hit the ground running (another thing I love to do) in the tech industry.
             I love to chat, so drop me an email so we can get to know each other!
 
       
