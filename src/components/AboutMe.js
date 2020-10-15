@@ -58,16 +58,24 @@ const AboutMe = () =>  {
             <br/>
             I love working in multicultural and multidisciplinary teams and am ready to hit the ground running (another thing I love to do) in the tech industry.
             I love to chat, so drop me an email so we can get to know each other!
-
-      
           </Typography>
         </ScrollableAnchor>
+        <Typography className={classes.title}>
+          Interests
+        </Typography>
+        <Typography className={classes.text}>
+          As an Aussie I’ve grown up exploring the outdoors in the sunshine. Hiking, running and cycling are all ways that I love to get outside and keep active. Love those endorphins!
 
+          Moving over to London, I’ve had the chance to explore even further afield. My goal over the past 2 years was to visit a new city in a different country each month - and I achieved it!
+
+          My favourite thing about travelling is the food. Sights, sounds and smells that show you the true culture of a place.
+          I’ve always loved food and cooking. It’s one of the best ways to immerse yourself like a local and taking cooking classes gives you one of the best souvenirs you can find
+        </Typography>
+      
         <IconButton  className={classes.button} href='#Home'size="large" aria-label="up">
           <ArrowUpwardIcon />
         </IconButton>
       </Box>
-
     </>
   )
 }

@@ -30,6 +30,7 @@ const useStyles = makeStyles({
     position: 'relative',
     fontFamily: 'Montserrat, sans-serif',
     color: 'white',
+    paddingRight: '2%',
     textDecoration: 'none',
     fontSize: '20px',
     '@media (max-width:800px)': {
@@ -44,8 +45,7 @@ const useStyles = makeStyles({
     justifyContent: 'space-evenly',
     width: '100%',
     color: 'white',
-    marginBottom: '5%',
-    paddingRight: '1%'
+    marginBottom: '5%'
   },
   individualbox: {
     display: 'flex',
